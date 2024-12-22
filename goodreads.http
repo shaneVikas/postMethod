@@ -1,0 +1,22 @@
+GET http://localhost:3000/books/
+
+###
+GET http://localhost:3000/books/40
+
+###
+POST http://localhost:3000/books/
+Content-type:application/json
+  {
+        "book_id": 41,
+        "title": "Harry Potter and the Sorcerers Stone",
+        "author_id": 1,
+        "rating": 4.48,
+        "rating_count": 7464819,
+        "review_count": 118312,
+        "description": "Harry Potters life is miserable. His parents are dead and hes stuck with his heartless relatives.",
+        "pages": 309,
+        "date_of_publication": "November 1st 2003",
+        "edition_language": "English",
+        "price": 750,
+        "online_stores": "Amazon, Audible,Google play, Indigo,Abebooks"
+    },
