@@ -70,7 +70,7 @@ app.post('/books/', async (request, response) => {
 
   const addBookQuery = `
     INSERT INTO
-      book (title,author_id,rating,rating_count,review_count,description,pages,date_of_publication,edition_language,price,online_stores)
+      book (book_id,title,author_id,rating,rating_count,review_count,description,pages,date_of_publication,edition_language,price,online_stores)
     VALUES
       (
         '${book_id}'
